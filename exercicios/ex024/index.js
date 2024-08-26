@@ -3,10 +3,10 @@
 || -> true && false -> vai retornar "o valor verdadeiro"
 */
 
-function falaoi () {
-    return 'Oi';
-}
+const a = 0;
+const b = null;
+const c = 'false';
+const d = false;
+const e = NaN;
 
-const vaiExecutar = false;
-
-console.log(vaiExecutar && falaoi());
+console.log(a || b || c || d || e);
