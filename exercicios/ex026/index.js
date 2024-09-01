@@ -1,3 +1,6 @@
+// Se (numero >= 0 && numero <= 5) ocorrer, faça isso {código}
+// Se não faça isso {o código}
+
 const numero = 10;
 
 if (numero >= 0 && numero <= 5) {
