@@ -1,2 +1,18 @@
-const data = new Date(2024,8,20,16,14,27,500);
-console.log(data.toString());
+function zeroAEsquerda (num) {
+    return num >= 10 ? num : `0${num}`;
+}
+
+function formataData(data) {
+    const dia = zeroAEsquerda(data.getDate());
+    const mes = zeroAEsquerda(data.getMonth() + 1);
+    const ano = zeroAEsquerda(data.getFullYear());
+    const hora = zeroAEsquerda(data.getHours());
+    const min = zeroAEsquerda(data.getMinutes());
+    const seg = zeroAEsquerda(data.getSeconds());
+
+    return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`;
+}
+
+    const data = new Date();
+    const dataBrasil = formataData(data);
+    console.log(dataBrasil);
