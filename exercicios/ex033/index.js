@@ -8,4 +8,6 @@ const pessoa = {
     }
 };
 
-console.log(pessoa)
+// Atribuicao via desestruturacao
+const { nome: teste = '', sobrenome } = pessoa;
+console.log(teste, sobrenome);
